@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women In Tech Hackathon</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+
+    
+    <meta charset="utf-8">
+ 
+    <!-- Page styles - make your own! -->
+    <link rel="stylesheet" href="app.css">
+
+    <!-- bugi custom properties (CSS variable) - set these! -->
+    <style>
+        :root {
+            --bugi-height: 80vh;
+            --bugi-avatar: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' viewBox='0 0 100 125' enable-background='new 0 0 100 100' xml:space='preserve'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M38.331,47.025c0.777,0,1.408-0.631,1.408-1.408c0-0.777-0.631-1.408-1.408-1.408 c-0.777,0-1.408,0.631-1.408,1.408C36.923,46.394,37.554,47.025,38.331,47.025z M38.331,50.78c-2.852,0-5.162-2.311-5.162-5.162 c0-2.852,2.311-5.162,5.162-5.162s5.162,2.311,5.162,5.162C43.493,48.469,41.182,50.78,38.331,50.78z'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M62.735,50.78c-2.852,0-5.162-2.311-5.162-5.162c0-2.852,2.311-5.162,5.162-5.162 c2.852,0,5.162,2.311,5.162,5.162C67.897,48.469,65.586,50.78,62.735,50.78z M62.735,47.025c0.777,0,1.408-0.631,1.408-1.408 c0-0.777-0.631-1.408-1.408-1.408c-0.777,0-1.408,0.631-1.408,1.408C61.327,46.394,61.958,47.025,62.735,47.025z'/%3E%3Cpath d='M51.941,26.095v-4.77c1.922-0.751,3.285-2.617,3.285-4.805c0-2.851-2.311-5.162-5.162-5.162 c-2.852,0-5.162,2.311-5.162,5.162c0,2.188,1.363,4.054,3.285,4.805v4.77c-17.788,0.79-31.913,12.726-31.913,27.338 c0,0.389,0.016,0.776,0.036,1.161l-0.036-0.031v34.079l10.544-14.415c6.058,4.657,14.237,6.588,23.247,6.588 c18.662,0,33.79-12.259,33.79-27.382C83.854,38.821,69.729,26.885,51.941,26.095z M50.063,15.112c0.777,0,1.408,0.631,1.408,1.408 c0,0.777-0.631,1.408-1.408,1.408c-0.777,0-1.408-0.631-1.408-1.408C48.656,15.743,49.286,15.112,50.063,15.112z M50.063,77.061 c-9.703,0-18.339-2.71-23.834-8.343l-6.202,7.696v-22.43l0.019,0.021c-0.006-0.191-0.019-0.381-0.019-0.573 c0-13.028,13.474-23.628,30.036-23.628c16.562,0,30.036,10.599,30.036,23.628S66.625,77.061,50.063,77.061z'/%3E%3Cpath d='M50.7,67.492c-6.836,0-14.916-3.037-15.257-3.166c-0.969-0.368-1.457-1.452-1.089-2.421c0.367-0.969,1.451-1.458,2.42-1.09 c0.077,0.029,7.786,2.922,13.925,2.922c6.418,0,12.451-2.834,12.511-2.862c0.938-0.444,2.057-0.047,2.501,0.89 c0.445,0.936,0.047,2.056-0.889,2.501C64.546,64.397,57.956,67.492,50.7,67.492z'/%3E%3Cpath fill='%23000000' d='M88.08,60.693L88.08,60.693c-1.032,0-1.877-0.845-1.877-1.877v-12.3c0-1.032,0.845-1.877,1.877-1.877l0,0 c1.032,0,1.877,0.845,1.877,1.877v12.3C89.958,59.848,89.113,60.693,88.08,60.693z'/%3E%3Cpath fill='%23000000' d='M12.047,60.693L12.047,60.693c-1.032,0-1.877-0.845-1.877-1.877v-12.3c0-1.032,0.845-1.877,1.877-1.877h0 c1.032,0,1.877,0.845,1.877,1.877v12.3C13.924,59.848,13.079,60.693,12.047,60.693z'/%3E%3Cpath fill='%23000000' d='M92.623,55.252L92.623,55.252c-1.032,0-1.877-0.845-1.877-1.877v-1.418c0-1.032,0.845-1.877,1.877-1.877l0,0 c1.032,0,1.877,0.845,1.877,1.877v1.418C94.5,54.407,93.655,55.252,92.623,55.252z'/%3E%3Cpath fill='%23000000' d='M7.377,55.252L7.377,55.252c-1.032,0-1.877-0.845-1.877-1.877v-1.418c0-1.032,0.845-1.877,1.877-1.877h0 c1.032,0,1.877,0.845,1.877,1.877v1.418C9.254,54.407,8.41,55.252,7.377,55.252z'/%3E%3C/svg%3E");
+        }
+    </style>
+    <!-- bugi styles -->
+    <link rel="stylesheet" href="bugi.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    
+    <!-- These provide in-browser transpilation of ES6 JS code to ES5 to support IE11 -->
+    <script src="https://unpkg.com/@babel/polyfill@7.6.0/dist/polyfill.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    
+</head>
+<body>
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#">TinkerHub<span></span></a></div>
+            <ul class="menu">
+                <li><a href="#home" class="menu-btn">Home</a></li>
+                <li><a href="#skills" class="menu-btn">Our Standards</a></li>
+                <li><a href="#about" class="menu-btn">Previous Projects</a></li>
+                <li><a href="#services" class="menu-btn">Upcoming Events</a></li>
+               
+                <li><a href="#contact" class="menu-btn">Contact</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- home section start -->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                
+                <div class="text-2">Women In Tech</div>
+                <div class="text-3"> <span class="typing"></span></div>
+               
+            </div>
+        </div>
+    </section>
+
+    <!-- about section start -->
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title"> Previous Projects</h2>
+            <div class="about-content">
+                 
+                <div class="column right">
+                    <div class="text">WIT: <span class="typing-2"></span></div>
+                    <p>
+                        <br></br>
+                        ⚪SHE HACKS
+                        <br></br>
+                        ⚪FOUNDATIONAL COURSE
+                        <br></br>
+                        ⚪LIGHTENING TALKS
+                        <br></br>
+                        ⚪MENTORSHIP
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- services section start -->
+    <section class="services" id="services">
+        <div class="max-width">
+            <h2 class="title">Upcoming Projects</h2>
+            <div class="serv-content">
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-paint-brush"></i>
+                        <div class="text">IAM REMARKABLE</div>
+                        <p>IAM REMARKABLE session is where we all gather together to share our greatest achievements and failures and how we motivate others.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-chart-line"></i>
+                        <div class="text">Tea with WITI</div>
+                        <p>Virtual networking among women all around the globe.Hence, helping in the development of each one of them in different topics .</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-code"></i>
+                        <div class="text">Self Confidento</div>
+                        <p>A initiative to develop our self confidence and overcome any obstacles as it is an important thing for our growth in this society.</p>
+                    </div>
+                </div>
+               </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- skills section start -->
+    <section class="skills" id="skills">
+        <div class="max-width">
+            <h2 class="title">OUR STANDARDS</h2>
+            <div class="skills-content">
+                <div class="column left">
+                    <div class="text">⚪EXCELLENCE</div>
+                    <p>Our goal is to give our customers the best solutions in highest aquality. Our employees strive for excellence and work hard to achieve it. Everything must work and be reliable. Great design must be both, aesthetic and functional. Product or service that pass these conditions will be everlasting.</p>
+                   <br></br>
+                    <div class="text">⚪UNIQUENESS</div>
+                    <p>Our mantra is to create new paths. We are not interested in copying others because we know, that if you want to succeed, you have to be different, unique. Our customers know that we create unique products and experience for them. This is the best way to differentiate us and our brand from the noise on market. Unique, different and proud.</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    
+   <!-- contact section start -->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Let's Talk</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Get in Touch</div>
+                    <p> Get in touch via the form below, or by contacting  via any of the information given below.</p>
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fas fa-user"></i>
+                            <div class="info">
+                                <div class="head">Discord</div>
+                                <div class="sub-title">
+                                   
+                                    <a href="https://discord.com/invite/bWmgn3f" class =" navbar-links">https://discord.com/invite/bWmgn3f</a> </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-user"></i>
+                            <div class="info">
+                                <div class="head">LinkedIn</div>
+                                <div class="sub-title">
+                                    
+                                    <a href="https://www.linkedin.com/company/women-in-technology/" class =" navbar-links">https://www.linkedin.com/company/women-in-technology/</a></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-user"></i>
+                            <div class="info">
+                                <div class="head">Contact</div>
+                                <div class="sub-title">
+                                    <a href="Phone number:" class =" navbar-links">+91 94977 73144</a>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column right">
+                    <div class="text">Message me</div>
+                    <form action="#">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" placeholder="Name" required>
+                            </div>
+                            <div class="field email">
+                                <input type="email" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="field textarea">
+                            <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+                        </div>
+                        <div class="button-area">
+                            <button type="submit">Send message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section start -->
+    <footer>
+        <a>Partners</a>  
+        <br>
+        </br>
+        <img src="WIT1.png" 
+    width="150" 
+    height="100" /> 
+    <img src="WIT2.png" 
+    width="150" 
+    height="100" /> 
+    <img src="WIT3.png" 
+    width="150" 
+    height="100" /> 
+    <img src="WIT4.png" 
+    width="150" 
+    height="100" /> 
+
+
+    </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
